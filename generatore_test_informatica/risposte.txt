@@ -1,0 +1,40 @@
+a: Variabile che contiene più dati.
+b: Una funzione.
+c: Un operatore matematico.
+d: Un compilatore.
+a: Un comando della libreria iostream.
+b: Contenitore di dati.
+c: Un'estensione di un file.
+d: Insieme di colori.
+a: flot a;
+b: cout <<a;
+c: int a;
+d: #include a;
+a: Spegne il computer.
+b: Dichiarare una variabile.
+c: Aprire il terminale.
+d: Includere una libreria.
+a: Compilato.
+b: Interpretato.
+c: Dipende da caso a caso.
+d: Nessuna delle precedenti.
+a: Finitezza e generalità.
+b: Finitezza, generalità e non ambiguità.
+c: Non ambiguità, leggibilità.
+d: Generalità, leggibilità, ambiguità.
+a: rm -fR .directory/
+b: g++ -Wall nomedelfile.cpp -o nuovonomedelfile
+c: ./nomedelfile\
+d: http://nomedelfile/c3j/
+a: !!
+b: &&
+c: !=
+d: ||
+a: cmath
+b: iostream
+c: string
+d: fstream
+a: Un programma che traduce il codice sorgente in codice eseguibile.
+b: Un programma che compila e risolve problemi.
+c: Un programma che esegue codici C++.
+d: Un programma che esegue codici json.

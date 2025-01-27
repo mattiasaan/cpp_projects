@@ -1,0 +1,10 @@
+Cos'e un vettore?
+Cos'e una variabile?
+Quali tra questi comandi dichiara una variabile?
+A cosa serve #include?
+Che tipologia di linguaggio e il C++?
+Quali sono le caratteristiche degli algoritmi?
+Come eseguire un programma C++?
+Quali tra queste e la condizione OR?
+Quale libreria viene usata per fare calcoli complessi?
+Cos'e un compilatore?

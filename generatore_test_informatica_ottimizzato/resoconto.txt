@@ -1,0 +1,4 @@
+Nome del candidato: f
+Cognome del candidato: g
+Classe del candidato: g
+Punteggio: 4/10

@@ -11,8 +11,8 @@ Progetti: 09, 12, 13, 14
 ### 🧠 Programmazione ad Oggetti
 Progetti: 15, 17, 18, 19
 
-### 📂 File, Menu e Interazione
-Progetti: 08, 16, 19
+### 📂 Gestione files e Interazioni
+Progetti: 16, 19
 
 ## Elenco dei Progetti
 
@@ -25,7 +25,6 @@ Scrivi un programma in C++ che:
 **Requisiti:**
 - Utilizzare un ciclo `for` per iterare esattamente 10 volte.
 - Usare una variabile accumulatore (`somma`) per tenere traccia della somma parziale.
-- Non utilizzare array o strutture complesse.
 
 ---
 
@@ -37,19 +36,16 @@ Scrivi un programma in C++ che:
 **Requisiti:**
 - Utilizzare un ciclo `while` per generare la sequenza.
 - Utilizzare solo operazioni aritmetiche di base.
-- Non è consentito usare array o strutture dati complesse.
 
 ---
 
 ### Ricerca del Numero Massimo tra 10 Valori (03)
 Scrivi un programma in C++ che:
 - Chieda all'utente di inserire **10 numeri interi**.
-- Determini e stampi a video il **valore massimo** tra i numeri inseriti.
+- Determini e stampi a schermo il **valore massimo** tra i numeri inseriti.
 
 **Requisiti:**
 - Utilizzare un ciclo `for` per leggere esattamente 10 numeri.
-- Salvare il primo numero inserito come valore iniziale massimo (`Vmax`).
-- A ogni iterazione, confrontare il nuovo numero con `Vmax` e aggiornare il massimo se necessario.
 
 ---
 
@@ -57,11 +53,10 @@ Scrivi un programma in C++ che:
 Scrivi un programma in C++ che:
 - Chieda all'utente di inserire **10 numeri interi**.
 - Calcoli la **media aritmetica** dei valori inseriti.
-- Stampi il risultato della media a video come numero con virgola (decimale).
+- Stampi il risultato della media a schermo come numero con virgola (decimale).
 
 **Requisiti:**
 - Utilizzare un ciclo `for` per leggere esattamente 10 numeri.
-- Usare una variabile `somma` per accumulare i valori inseriti.
 - Calcolare la media convertendo la somma in `float` prima della divisione.
 - Stampare la media risultante.
 
@@ -77,7 +72,7 @@ Scrivi un programma in C++ che:
 **Requisiti:**
 - Utilizzare un ciclo `for` per leggere esattamente 10 numeri.
 - Determinare il massimo e il minimo durante la lettura dei numeri.
-- Calcolare la media tra il massimo e il minimo (la media va calcolata come `(Vmax + Vmin) / 2`).
+- Calcolare la media tra il massimo e il minimo.
 - Stampare i risultati.
 
 ---
@@ -91,13 +86,11 @@ Scrivi un programma in C++ che:
 
 **Requisiti:**
 - Utilizzare un array di dimensione 10 per memorizzare i numeri.
-- Calcolare la media dividendo la somma dei numeri per 10.
-- Confrontare ogni numero con la media per determinare quello che è più vicino.
-- Ordinare i numeri più vicini alla media (se necessario) e stampare il primo.
+- Calcolare la media.
 
 ---
 
-### Distribuzione dei Biglietti tra i Ragazzi (07)
+### Distribuzione dei Biglietti tra Ragazzi (07)
 Scrivi un programma in C++ che:
 - Chieda all'utente di inserire il **numero di ragazzi** e il **numero di biglietti** disponibili.
 - Calcoli quanti **biglietti** ogni ragazzo riceve se i biglietti vengono distribuiti in modo equo.
@@ -106,15 +99,15 @@ Scrivi un programma in C++ che:
 
 **Requisiti:**
 - Utilizzare la divisione intera (`/`) per calcolare il numero di biglietti per ragazzo.
-- Utilizzare l'operatore modulo (`%`) per calcolare i biglietti rimanenti.
+- Utilizzare l'operatore (`%`) per calcolare i biglietti rimanenti.
 
 ---
 
 ### Gestione Voti Studenti (08)
 Scrivi un programma in C++ che permette di:
-1. Inserire i voti di uno studente.
-2. Visualizzare i voti inseriti e la loro media.
-3. Gestire l'interazione tramite un menu con le seguenti opzioni:
+- Inserire i voti di uno studente.
+- Visualizzare i voti inseriti e la loro media.
+- Gestire l'interazione tramite un menu con le seguenti opzioni:
    - **Visualizzare i voti**: Mostra i voti dell'utente e la media calcolata.
    - **Inserire i voti**: Permette all'utente di inserire il nome dello studente e 5 voti.
    - **Esci**: Termina l'esecuzione del programma.
@@ -143,10 +136,11 @@ Scrivi un programma in C++ che permetta all'utente di scegliere e eseguire una d
 - Il programma deve chiedere i numeri necessari per l'operazione scelta:
   - Per le operazioni aritmetiche (addizione, sottrazione, moltiplicazione, divisione), il programma richiede due numeri.
   - Per le operazioni di potenza, radice quadrata, seno, coseno e tangente, il programma richiede solo un numero.
+  - utilizzare la libreria cmath per i calcoli complessi.
 - Il programma deve gestire errori come:
   - Divisione per zero.
   - Radice quadrata di un numero negativo.
-- Il risultato di ogni operazione deve essere mostrato a video.
+- Il risultato di ogni operazione deve essere mostrato a schermo.
 
 ---
 
@@ -205,6 +199,8 @@ Il programma deve:
 
 ### Risolutore di Equazioni di Primo e Secondo Grado (14)
 Scrivi un programma in C++ che permetta all'utente di risolvere equazioni di primo grado e secondo grado utilizzando le funzioni e cmath
+
+---
 
 ### Generatore di Labirinti (15)
 Questo programma in C++ genera un labirinto casuale. Il labirinto è creato utilizzando un algoritmo di ricerca in profondità che inizia da un punto di partenza e crea passaggi, successivamente vengono aggiunti dei vicoli ciechi per aumentare la complessità.
@@ -292,7 +288,7 @@ Scrivi un programma in C++ che simuli un semplice conto bancario. Il programma d
   - Un metodo `preleva()` che chieda un importo e lo **sottragga** dal saldo.
   - Un metodo `visualizzaSaldo()` che mostri il saldo attuale dell’intestatario.
 
-Nel `main`, il programma deve permettere all’utente di scegliere continuamente tra:
+il programma deve permettere all’utente di scegliere continuamente tra:
 - **prelevare**
 - **depositare**
 - **saldo** (per visualizzare il saldo attuale)
@@ -301,7 +297,6 @@ Nel `main`, il programma deve permettere all’utente di scegliere continuamente
  **Requisiti:**
 - Utilizzare **classi e metodi** per gestire il conto.
 - Implementare un **ciclo** che consenta all’utente di eseguire più operazioni fino a quando sceglie di uscire.
-- Gestire l’input dell’utente tramite `cin`.
 
 ---
 
@@ -319,7 +314,7 @@ Scrivi un programma in C++ che simuli un conto bancario con **persistenza dei da
   - Un metodo `salvaFile()` che salvi i dati su un file di testo.
   - Un metodo **statico** `caricaDaFile()` che legga i dati da file e restituisca un oggetto `ContoBancario`.
 
-Nel `main`, il programma deve permettere all’utente di scegliere continuamente tra:
+il programma deve permettere all’utente di scegliere continuamente tra:
 - **prelevare**
 - **depositare**
 - **saldo** (per visualizzare il saldo attuale)
@@ -329,5 +324,4 @@ Nel `main`, il programma deve permettere all’utente di scegliere continuamente
 - Utilizzare **classi**, **metodi statici**, e **file I/O** (`ifstream`, `ofstream`).
 - Garantire che i dati vengano **salvati e ripristinati** tra diverse esecuzioni del programma.
 - Verificare che il saldo sia sufficiente prima di un prelievo.
-- Utilizzare `getline()` per leggere stringhe da file e `cin` per l’input utente.
-> Suggerimento: il file `conto.txt` deve contenere il nome nella prima riga e il saldo nella seconda.
+- Utilizzare `getline()` per leggere stringhe da file.

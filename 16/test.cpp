@@ -24,17 +24,20 @@ int fineTest()
     cin >> opz;
     if (opz == "file")
     {
-        cout <<"su quale sistema operativo sei? " <<endl;
-        cout << "0: linux" << endl << "1: windows" << endl;
+        cout << "su quale sistema operativo sei? " << endl;
+        cout << "0: linux" << endl
+            << "1: windows" << endl;
         cin >> sist;
-        if (sist == 0) {
+        if (sist == 0)
+        {
             // :)
             cout << "forse non la scelta migliore ma va bene se te l'hanno imposto" << endl;
             system("gedit resoconto.txt &");
-        } else if (sist == 1) {
+        }
+        else if (sist == 1)
+        {
             system("start resoconto.txt");
         }
-        
     }
     else if (opz == "exit")
     {
@@ -129,7 +132,7 @@ int my_random()
             cin >> ref;
             if (ref == "a")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -162,7 +165,7 @@ int my_random()
             cin >> ref;
             if (ref == "b")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -196,7 +199,7 @@ int my_random()
             cin >> ref;
             if (ref == "c")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -229,7 +232,7 @@ int my_random()
             cin >> ref;
             if (ref == "d")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -262,7 +265,7 @@ int my_random()
             cin >> ref;
             if (ref == "a")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -295,7 +298,7 @@ int my_random()
             cin >> ref;
             if (ref == "b")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -328,7 +331,7 @@ int my_random()
             cin >> ref;
             if (ref == "c")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -361,7 +364,7 @@ int my_random()
             cin >> ref;
             if (ref == "d")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -393,7 +396,7 @@ int my_random()
             cin >> ref;
             if (ref == "a")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
@@ -426,14 +429,15 @@ int my_random()
             cin >> ref;
             if (ref == "a")
             {
-				cout << "la risposta è corretta complimenti" << endl;
+                cout << "la risposta è corretta complimenti" << endl;
                 risposta += 1;
             };
             break;
         }
     }
 
-    file3 << endl << "il voto è " << risposta;
+    file3 << endl
+          << "il voto è " << risposta;
     file3.close();
     file2.close();
     file.close();
@@ -445,7 +449,7 @@ int my_random()
 int test()
 {
     initmy_Random();
-     my_random();
+    my_random();
 
     return 0;
 };

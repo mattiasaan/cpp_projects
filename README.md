@@ -209,8 +209,9 @@ Questo programma in C++ genera un labirinto casuale. Il labirinto è creato util
 - L'algoritmo di generazione del labirinto utilizza la ricerca in profondità (DFS). Si parte da un punto e si esplorano tutte le direzioni in modo casuale.
 - Vengono creati vicoli ciechi, ossia passaggi che non conducono a nessuna parte del labirinto, per complicare la navigazione.
 
-### Quiz a Scelta Multipla (16)
+---
 
+### Quiz a Scelta Multipla (16)
 Questo programma permette di eseguire un test a scelta multipla, dove le domande e le risposte vengono lette da due file esterni (`domande.txt` e `risposte.txt`). Il programma è progettato per essere interattivo, consentendo all'utente di rispondere alle domande e visualizzare il punteggio finale. Al termine, il resoconto del test viene salvato in un file di testo e può essere visualizzato dall'utente.
 
  **Funzionalità**
@@ -249,3 +250,72 @@ Il programma è compatibile con Linux e Windows. A seconda del sistema operativo
 4. **Funzione `visualizzaResoconto`**: Permette all'utente di visualizzare il resoconto in un editor di testo in base al sistema operativo.
 5. **Funzione `eseguiTest`**: Esegue il test, ponendo le domande all'utente e calcolando il punteggio finale.
 6. **Funzione `inizioTest`**: Raccoglie le informazioni dell'utente (nome, cognome, classe) e avvia il test.
+
+---
+
+### Gestione di una Scheda Studente (17)
+Scrivi un programma in C++ che:
+
+- Richieda all’utente di inserire il **nome**, la **matricola** (intero) e la **media** (decimale) di uno studente.
+- Utilizzi una **classe** chiamata `studente` per rappresentare queste informazioni.
+- La classe deve contenere tre **variabili private**: `nome`, `matricola`, e `media`, e un **costruttore** che le inizializzi.
+- La classe deve inoltre avere un **metodo pubblico** `stampaScheda()` che stampi le informazioni dello studente in un’unica riga.
+
+ **Requisiti:**
+
+- Utilizzare **incapsulamento** (variabili private e metodi pubblici).
+- Il programma deve gestire l’input da tastiera e l’output a schermo.
+- La stampa deve avvenire tramite un metodo della classe.
+
+---
+
+### Simulazione di un Conto Bancario (18)
+Scrivi un programma in C++ che simuli un semplice conto bancario. Il programma deve:
+
+- Chiedere all’utente il **nome dell’intestatario** e il **saldo iniziale**.
+- Utilizzare una **classe** chiamata `ContoBancario` con:
+  - Variabili **private**: `saldo` (double) e `intestatario` (string).
+  - Un **costruttore** che inizializzi le due variabili.
+  - Un metodo `deposita()` che chieda all’utente un importo e lo **aggiunga** al saldo.
+  - Un metodo `preleva()` che chieda un importo e lo **sottragga** dal saldo.
+  - Un metodo `visualizzaSaldo()` che mostri il saldo attuale dell’intestatario.
+
+Nel `main`, il programma deve permettere all’utente di scegliere continuamente tra:
+- **prelevare**
+- **depositare**
+- **saldo** (per visualizzare il saldo attuale)
+- **esci** (per uscire dal programma)
+
+ **Requisiti:**
+- Utilizzare **classi e metodi** per gestire il conto.
+- Implementare un **ciclo** che consenta all’utente di eseguire più operazioni fino a quando sceglie di uscire.
+- Gestire l’input dell’utente tramite `cin`.
+
+---
+
+### Conto Bancario con Salvataggio su File (19)
+Scrivi un programma in C++ che simuli un conto bancario con **persistenza dei dati** su file. Il programma deve:
+
+- Tentare di **caricare** da file (`conto.txt`) il nome dell’intestatario e il saldo.
+  - Se il file non esiste, deve chiedere all’utente di inserire i dati iniziali e salvarli su file.
+- Utilizzare una **classe** chiamata `ContoBancario` con:
+  - Variabili **private**: `saldo` (double) e `intestatario` (string).
+  - Un **costruttore** che inizializzi le variabili.
+  - Un metodo `deposita()` che chieda un importo, lo aggiunga al saldo e **salvi** il nuovo saldo su file.
+  - Un metodo `preleva()` che chieda un importo, lo sottragga dal saldo (se sufficiente) e **salvi** il nuovo saldo su file.
+  - Un metodo `visualizzaSaldo()` che mostri a schermo il saldo attuale.
+  - Un metodo `salvaFile()` che salvi i dati su un file di testo.
+  - Un metodo **statico** `caricaDaFile()` che legga i dati da file e restituisca un oggetto `ContoBancario`.
+
+Nel `main`, il programma deve permettere all’utente di scegliere continuamente tra:
+- **prelevare**
+- **depositare**
+- **saldo** (per visualizzare il saldo attuale)
+- **esci** (per terminare il programma)
+
+ **Requisiti:**
+- Utilizzare **classi**, **metodi statici**, e **file I/O** (`ifstream`, `ofstream`).
+- Garantire che i dati vengano **salvati e ripristinati** tra diverse esecuzioni del programma.
+- Verificare che il saldo sia sufficiente prima di un prelievo.
+- Utilizzare `getline()` per leggere stringhe da file e `cin` per l’input utente.
+> Suggerimento: il file `conto.txt` deve contenere il nome nella prima riga e il saldo nella seconda.

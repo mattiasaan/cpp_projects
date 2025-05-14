@@ -2,6 +2,18 @@
 
 Questa repository contiene diversi programmi scritti in C++ per risolvere vari problemi di programmazione. Ogni programma è progettato per eseguire una specifica funzione, come calcolare somme, ordinare numeri, gestire interazioni con l'utente e altro.
 
+### 🔢 Esercizi Numerici e Cicli
+Progetti: 01, 02, 03, 04, 05, 06, 07, 08, 10, 11
+
+### 🧮 Calcolatrici e Conversioni
+Progetti: 09, 12, 13, 14
+
+### 🧠 Programmazione ad Oggetti
+Progetti: 15, 17, 18, 19
+
+### 📂 File, Menu e Interazione
+Progetti: 08, 16, 19
+
 ## Elenco dei Progetti
 
 ### Somma di 10 Numeri Inseriti dall'Utente (01)

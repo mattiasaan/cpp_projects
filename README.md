@@ -325,3 +325,36 @@ il programma deve permettere all’utente di scegliere continuamente tra:
 - Garantire che i dati vengano **salvati e ripristinati** tra diverse esecuzioni del programma.
 - Verificare che il saldo sia sufficiente prima di un prelievo.
 - Utilizzare `getline()` per leggere stringhe da file.
+
+---
+
+### Gestione Assenze Studente con Interazione Docente (20)  
+Scrivi un programma in C++ che simuli la gestione delle assenze di uno studente tramite l’interazione con più docenti. Il programma deve:
+
+- Creare uno **studente** con un nome fornito dall’utente e inizialmente con zero assenze.
+- Creare un array di tre **docenti** con nomi fissi ("Rossi", "Bianchi", "Verdi").
+- Permettere all’utente di selezionare un docente e poi scegliere una tra le seguenti operazioni:
+  - **Aggiungi assenze**: aumentare il numero di assenze dello studente di un certo numero indicato dall’utente.
+  - **Rimuovi assenze**: diminuire il numero di assenze dello studente di un certo numero, senza mai scendere sotto zero.
+  - **Leggi assenze**: mostrare a schermo il numero attuale di assenze dello studente.
+- Ripetere le scelte fino a quando l’utente decide di uscire.
+
+Il programma deve utilizzare due **classi**:
+
+- `Studente` con:
+  - Variabili **private**: `nome` (string) e `assenze` (int).
+  - Un **costruttore** che inizializzi il nome e imposti le assenze a zero.
+  - Metodi per aggiungere, rimuovere e leggere le assenze.
+  - Metodo per restituire il nome dello studente.
+
+- `Docente` con:
+  - Variabile **privata** `nome` (string).
+  - Un **costruttore** che inizializzi il nome.
+  - Metodi per aumentare, diminuire e leggere le assenze di uno studente (passato per riferimento).
+  - Metodo per restituire il nome del docente.
+
+**Requisiti:**  
+- Utilizzare il passaggio per riferimento (`Studente &`) nei metodi della classe `Docente` che modificano lo studente.  
+- Assicurarsi che le assenze non scendano mai sotto zero.  
+- Gestire in modo appropriato eventuali input non validi dall’utente.  
+- Fornire un’interfaccia testuale semplice per selezionare docenti e operazioni.

@@ -9,7 +9,7 @@ Progetti: 01, 02, 03, 04, 05, 06, 07, 08, 10, 11
 Progetti: 09, 12, 13, 14
 
 ### 🧠 Programmazione ad Oggetti
-Progetti: 15, 17, 18, 19
+Progetti: 15, 17, 18, 19, 20
 
 ### 📂 Gestione files e Interazioni
 Progetti: 16, 19
